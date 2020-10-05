@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    {% for i in response %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+    {% if major == "it" %}
+        <em>Welcome to COP 4813</em>
+    {% else %}
+        <em>You are not authorized to enroll in this class.</em>
+    {% endif %}
+</body>
+</html>

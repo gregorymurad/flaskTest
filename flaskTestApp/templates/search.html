@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    <form action="" method="POST" name="sample">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+
+        <p>First Name:
+            {{ form.first_name() }}
+        </p>
+
+        <p>
+            Last Name:
+            {{ form.last_name() }}
+        </p>
+
+        <p>
+            Panther ID:
+            {{ form.panther_id() }}
+        </p>
+
+        <p>
+            Start Date:
+            {{ form.start_date() }}
+        </p>
+
+        <p>
+            Major:
+            {{ form.major() }}
+        </p>
+
+        <p>
+            Campus:
+            {{ form.campus() }}
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
